@@ -13,4 +13,4 @@ const tileExists = async (req, res, next) => {
   }
 };
 
-module.exports = tileExists;
+module.exports = {tileExists};
