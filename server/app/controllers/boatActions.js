@@ -15,11 +15,10 @@ const browse = async (req, res, next) => {
 
 
 const edit = async (req, res, next) => {
-  const boat = { ...req.body, id: req.params.id };
+  const boats = { ...req.body, x: req.body.coord_x, y: req.body.coord_y, id: req.params.id };
 
   try {
-    await tables.category.update(boat);
-
+    await tables.boat.update(boats);
     res.sendStatus(204);
   } catch (err) {
     next(err);
