@@ -15,6 +15,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Map /> },
       { path: "/boats/:id/move/:x/:y", element: <MoveBoat /> },
+    
     ],
   },
 ]);
