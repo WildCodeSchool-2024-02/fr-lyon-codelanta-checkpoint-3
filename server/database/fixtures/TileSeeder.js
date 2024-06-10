@@ -5,6 +5,7 @@ class TileSeeder extends AbstractSeeder {
     super({ table: "tile", truncate: true });
   }
 
+
   run() {
     const tiles = [
       { type: "sea", coord_x: 0, coord_y: 0 },

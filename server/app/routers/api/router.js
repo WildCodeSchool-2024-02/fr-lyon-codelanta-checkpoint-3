@@ -14,6 +14,10 @@ const gamesRouter = require("./games/router");
 
 router.use("/games", gamesRouter);
 
+// const albumsRouter = require("./albums/router");
+
+// router.use("/albums", albumsRouter);
+
 /* ************************************************************************* */
 
 module.exports = router;

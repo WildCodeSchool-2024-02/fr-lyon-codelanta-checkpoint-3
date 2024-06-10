@@ -13,3 +13,13 @@ CREATE TABLE tile (
   coord_y INT NOT NULL,
   PRIMARY KEY(id)
 );
+
+-- CREATE TABLE album (
+--   id INT AUTO_INCREMENT NOT NULL,
+--   title VARCHAR(50) NOT NULL, 
+--   genre VARCHAR(50) NOT NULL, 
+--   image BLOB NOT NULL,
+--   artiste VARCHAR(50) NOT NULL, 
+--   track VARCHAR(255) NOT NULL, 
+--   PRIMARY KEY(id)
+-- )
