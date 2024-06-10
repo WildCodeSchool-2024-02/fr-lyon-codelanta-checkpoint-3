@@ -8,7 +8,9 @@ const router = express.Router();
 
 const { browse } = require("../../../controllers/tileActions");
 
-router.get("/", browse);
+const tileExists = require("../../../services/tileExists");
+
+router.get("/", tileExists, browse);
 
 /* ************************************************************************* */
 
