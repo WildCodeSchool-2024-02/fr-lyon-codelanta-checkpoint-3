@@ -6,6 +6,8 @@ const router = express.Router();
 // Define Your API Routes Here
 /* ************************************************************************* */
 
+// const validateCoord = require("../../../services/tileExists");
+
 const { browse, read, edit, add } = require("../../../controllers/boatActions");
 
 router.get("/", browse);

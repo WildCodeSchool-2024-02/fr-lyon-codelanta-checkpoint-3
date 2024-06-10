@@ -14,10 +14,10 @@ const browse = async (req, res, next) => {
 };
 const read = async (req, res, next) => {
   try {
-    const boat = await tables.boat.read(req.params.id);
+    const boat = await tables.boat.readByCoordinates(req.params.id);
 
     if (boat == null) {
-      res.sendStatus(404);
+      res.sendStatus(424);
     } else {
       res.status(200).json(boat);
     }
