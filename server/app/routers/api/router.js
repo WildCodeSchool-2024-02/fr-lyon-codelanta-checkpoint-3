@@ -14,6 +14,9 @@ const gamesRouter = require("./games/router");
 
 router.use("/games", gamesRouter);
 
+const titlesRouter = require("./titles/router");
+
+router.use("/tiles", titlesRouter);
 /* ************************************************************************* */
 
 module.exports = router;
