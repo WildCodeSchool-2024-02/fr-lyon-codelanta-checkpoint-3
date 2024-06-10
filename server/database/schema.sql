@@ -11,15 +11,7 @@ CREATE TABLE tile (
   type VARCHAR(255) NOT NULL,
   coord_x INT NOT NULL,
   coord_y INT NOT NULL,
+  has_tresure boolean NOT NULL default 0,
   PRIMARY KEY(id)
 );
 
--- CREATE TABLE album (
---   id INT AUTO_INCREMENT NOT NULL,
---   title VARCHAR(50) NOT NULL, 
---   genre VARCHAR(50) NOT NULL, 
---   image BLOB NOT NULL,
---   artiste VARCHAR(50) NOT NULL, 
---   track VARCHAR(255) NOT NULL, 
---   PRIMARY KEY(id)
--- )
