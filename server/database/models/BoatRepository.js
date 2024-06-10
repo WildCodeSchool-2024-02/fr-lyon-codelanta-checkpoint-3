@@ -14,12 +14,13 @@ class BoatRepository extends AbstractRepository {
   }
 
   async update(boat) {
-    await this.database.query(
+    const [result] = await this.database.query(
       `UPDATE ${this.table} SET coord_x = ?, coord_y = ? WHERE id = ?`,
       [boat.coord_x, boat.coord_y, boat.id]
     );
-    return 204;
+    return result.affectedRows;
   }
 }
 
 module.exports = BoatRepository;
+
