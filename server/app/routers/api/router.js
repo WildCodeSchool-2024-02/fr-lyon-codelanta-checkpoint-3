@@ -8,7 +8,7 @@ const router = express.Router();
 
 const boatsRouter = require("./boats/router");
 
-router.use("/boats", boatsRouter);
+router.use("/boats/", boatsRouter);
 
 const gamesRouter = require("./games/router");
 
