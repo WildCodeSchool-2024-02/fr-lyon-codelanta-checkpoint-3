@@ -35,6 +35,10 @@ class TileRepository extends AbstractRepository {
 
     return result;
   }
+
+  // async readByCoordinates(){
+  //   const[]=
+  // }
 }
 
 module.exports = TileRepository;

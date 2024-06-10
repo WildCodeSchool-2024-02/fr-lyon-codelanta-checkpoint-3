@@ -8,6 +8,8 @@ const router = express.Router();
 
 const { browse } = require("../../../controllers/tilesActions");
 
+// const tileExists = require("../../../services/tileExists");
+
 router.get("/", browse);
 
 /* ************************************************************************* */
