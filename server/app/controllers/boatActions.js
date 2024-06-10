@@ -15,7 +15,12 @@ const browse = async (req, res, next) => {
 
 const edit = async (req, res, next) => {
   // Extract the category data from the request body and params
-  const boat = { ...req.body, id: req.params.id , coord_x: req.body.coord_x , coord_y: req.body.coord_y };
+  const boat = {
+    ...req.body,
+    id: req.params.id,
+    coord_x: req.body.coord_x,
+    coord_y: req.body.coord_y,
+  };
 
   try {
     // Update the category in the database
@@ -30,5 +35,6 @@ const edit = async (req, res, next) => {
 };
 
 module.exports = {
-  browse, edit
+  browse,
+  edit,
 };
