@@ -3,7 +3,7 @@ const tables = require("../../database/tables");
 const browse = async (req, res, next) => {
   try {
     // Fetch all boats from the database asynchronously
-    const boats = await tables.boat.readAll(tables.tile);
+    const boats = await tables.boat.readAll();
 
     // Respond with the boats in JSON format
     res.json(boats);
