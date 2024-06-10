@@ -7,8 +7,8 @@ class BoatRepository extends AbstractRepository {
 
   async readAll() {
     // Execute the SQL SELECT query to retrieve all boats from the "boat" table
-    const [rows] = await this.database.query(`select * from ${this.table}`);
-
+    const [rows] = await this.database.query
+    (`select boat.id, boat.coord_x, boat.coord_y, boat.name, tile.type, tile.has_treasure from boat inner join tile on boat.coord_x=tile.coord_x && boat.coord_y=tile.coord_y`);
     // Return the array of boats
     return rows;
   }
@@ -19,7 +19,7 @@ class BoatRepository extends AbstractRepository {
       `update ${this.table} set coord_x = ?, coord_y = ? where id = ?`,
       [boat.coord_x, boat.coord_y, boat.id]
     );
-  
+
   
     // Return how many rows were affected
     return result.affectedRows;

@@ -10,6 +10,10 @@ const { browse } = require("../../controllers/tilesActions")
 
 router.get("/", browse);
 
+// const tileExist = require("../../services/tileExists")
+
+router.get("/:id",browse);
+
 /* ************************************************************************* */
 
 module.exports = router;

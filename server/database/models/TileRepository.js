@@ -37,4 +37,9 @@ class TileRepository extends AbstractRepository {
   }
 }
 
+// async readByCoordinates{
+//   const [] = await this.database.query(
+
+//   )
+
 module.exports = TileRepository;
